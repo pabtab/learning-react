@@ -1,9 +1,14 @@
-import React from "react";
+import React, { Component} from "react";
 
-class Body extends React.Component{
-    render(){
+import BookList from './book-list';
+
+class Body extends Component {
+    render() {
         return (
-            <p>Contendedor body</p>
+            <div>
+                <p>Contendedor body</p>
+                <BookList />
+            </div>
         );
     }
 }
